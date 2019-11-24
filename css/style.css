@@ -200,6 +200,7 @@ a:hover,
 
 .contacts form p input {
     height: 30px;
+    width: 100%;
 }
 
 .contacts form textarea {
