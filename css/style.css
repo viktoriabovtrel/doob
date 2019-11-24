@@ -374,6 +374,9 @@ footer {
     }
 
     .contacts form p input {
+        width: 100%;
+    }
+    .contacts form p input {
         height: 55px;
     }
 
