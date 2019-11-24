@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #314584;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.red-text {
+    color: #ff3946;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #314584;
+}
+
+a:hover,
+.header select:hover {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.text {
+    font-weight: normal;
+    line-height: 150%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.max-width_768 {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.header .header-flex,
+.gallery .gallery-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header .nav {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    width: 150px;
+    background: #ffffff;
+    z-index: 99999;
+    margin-left: -52px;
+    text-align: center;
+}
+
+
+.header .nav li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.header .menuToggle:hover {
+    cursor: pointer;
+}
+
+.header .menuToggle {
+    font-size: 30px;
+}
+
+.header select,
+.header .header_item__button a,
+.contacts .contacts_button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.header select {
+    border: none;
+    color: #314584;
+}
+
+.header .header_item__button {
+    border: none;
+    padding: 15px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero .hero_item__button,
+.contacts .contacts_button {
+    background: #ff3946;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+.hero .hero_item__button a {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.hero .slick-prev:before,
+.hero .slick-next:before {
+    color: #314584;
+}
+
+.hero .slick-next {
+    right: 5px;
+}
+
+
+.gallery .gallery-flex {
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gallery .gallery-flex>div {
+    width: 33%;
+    height: auto;
+}
+
+.gallery .gallery-flex div img {
+    width: 100%;
+}
+
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contacts .contacts-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacts .form {
+    align-self: center;
+}
+
+.contacts .form input,
+.contacts .form textarea {
+    border: none;
+}
+
+.contacts form p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.contacts form {
+    width: 70%;
+}
+
+
+.contacts form p input {
+    height: 30px;
+}
+
+.contacts form textarea {
+    height: 60px;
+    width: 100%;
+}
+
+.contacts .form-flex p input,
+.contacts .form textarea {
+    color: #314584;
+    background: #f4fafe;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.contacts .form-flex p {
+    background: #f4fafe;
+}
+
+.contacts .form p input[type="email"]::placeholder,
+.contacts .form p input[type="text"]::placeholder,
+.contacts .form textarea[type="text"]::placeholder {
+    color: #314584;
+}
+
+.contacts .form input[type="submit"] {
+    cursor: pointer;
+}
+
+p+.subtitle {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer {
+    background: #314584;
+}
+
+.footer {
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .nav li a,
+.footer .social-networks a {
+    color: #ffffff;
+}
+
+.footer .nav li {
+    display: inline;
+}
+
+.footer .nav li:not(:first-child) {
+    padding-left: 15px;
+}
+
+
+.footer .social-networks a {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 62px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    .max-width_768 {
+        display: block;
+    }
+
+    .header .nav li,
+    .footer .nav li {
+        display: inline;
+    }
+
+    .header .nav ul li {
+        display: inline;
+    }
+
+    .header .nav li:not(:first-child),
+    .footer .nav li:not(:first-child) {
+        padding-left: 30px;
+    }
+
+    .header .nav li:first-child {
+        padding-left: 10px;
+    }
+
+    .header .menuToggle {
+        display: none;
+    }
+
+    .header .nav {
+        padding-right: 15px;
+        padding-left: 15px;
+        display: inline;
+        position: static;
+        background: white;
+        margin-left: 0;
+    }
+
+    .header select,
+    .header .header_item__button a,
+    .contacts .contacts_button {
+        font-size: 14px;
+    }
+
+    .hero .hero-flex,
+    .contacts .form-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero .hero-flex {
+        padding-top: 40px;
+        padding-bottom: 150px;
+    }
+
+    .hero .hero_item {
+        width: 50%;
+    }
+
+    .hero .slider div img {
+        width: 100%;
+    }
+
+    .hero .hero_item__button a {
+        font-size: 14px;
+    }
+
+    .title+p {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+
+    .gallery .gallery-flex {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contacts .form {
+        width: 100%;
+    }
+
+    .contacts .contacts_item{
+        text-align: start;
+    }
+
+    .contacts .form-flex p {
+        width: 50%;
+    }
+
+    .contacts .form-flex p:first-child {
+        margin-right: 30px;
+    }
+
+    .contacts form p input {
+        height: 55px;
+    }
+
+    .contacts form textarea {
+        margin-top: 30px;
+        height: 100px;
+    }
+
+    .contacts .form-flex p input,
+    .contacts .form textarea {
+        font-size: 14px;
+    }
+
+    p+.subtitle {
+        padding-bottom: 45px;
+        padding-top: 20px;
+    }
+
+    .footer .nav {
+        padding-bottom: 40px;
+    }
+
+    .footer .social-networks {
+        padding-top: 40px;
+    }
+
+    .footer .social-networks a {
+        font-size: 30px;
+    }
+}
